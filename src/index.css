@@ -1,0 +1,147 @@
+body {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 50px auto;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+a {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  font-size: inherit;
+}
+
+.ui-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+  border-radius: 5px;
+  padding: 5px 15px;
+
+  border: 0;
+  outline: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+p {
+  margin: 0;
+}
+
+.filter {
+  margin: 0 0 30px 0;
+}
+.filter__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.filter__select {
+  padding: 10px 20px;
+  font-size: inherit;
+}
+.filter__item {}
+
+.games {
+}
+.games__wrapper {
+}
+
+.games__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.games__item {
+  position: relative;
+}
+.games__item-wrapper {
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 7px 29px rgb(100 100 111 / 20%);
+}
+.games__item-img-wrapper {
+  position: relative;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+.games__item-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+  transition: all 0.3s ease;
+}
+.games__item-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.games__item-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.games__item-link:hover ~ .games__item-wrapper .games__item-img,
+.games__item-link:focus ~ .games__item-wrapper .games__item-img {
+  transform: scale(1.03);
+}
+
+.games__item-link:hover ~ .games__item-wrapper,
+.games__item-link:focus ~ .games__item-wrapper {
+  box-shadow: 0 14px 40px rgb(100 100 111 / 30%);
+}
+
+.games__item-link:active ~ .games__item-img-wrapper .games__item-img {
+  transform: scale(1);
+}
+
+.games__show-more {
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+.game {
+}
+.game__wrapper {
+}
+.game__back {
+  margin-bottom: 30px;
+}
+.game__title {
+  text-align: center;
+}
