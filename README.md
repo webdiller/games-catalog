@@ -1,2 +1,2 @@
 # Тестовое заданиt - каталог игр
-### [Смотреть в сети](https://vercel.com/webdiller/games-catalog)
+### [Смотреть в сети](https://games-catalog.vercel.app/)
